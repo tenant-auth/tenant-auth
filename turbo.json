@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "futureFlags": {
+    "globalConfiguration": true,
+    "affectedUsingTaskInputs": true
+  },
+  "global": {
+    "inputs": ["tsconfig.json", "tsconfig.base.json", "pnpm-workspace.yaml"]
+  },
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "tsconfig.json", "tsdown.config.*"],
+      "outputs": ["dist/**", "node_modules/.cache/ts/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+     "deploy": {
+      "cache": false
+    },
+    "migrate": {
+      "cache": false
+    },
+    "generate": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@tenant-auth/cli",
+  "version": "0.0.1",
+  "description": "The most comprehensive multi-tenancy framework for TypeScript.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenant-auth/tenant-auth.git",
+    "directory": "packages/cli"
+  },
+  "keywords": [
+    "multi-tenancy",
+    "tenant-auth",
+    "auth",
+    "cli",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

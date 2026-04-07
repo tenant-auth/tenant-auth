@@ -1,0 +1,23 @@
+{
+  "name": "tenant-auth",
+  "version": "0.0.1",
+  "description": "The most comprehensive multi-tenancy auth framework for TypeScript.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenant-auth/tenant-auth.git",
+    "directory": "packages/multi-tenancy"
+  },
+  "keywords": [
+    "multi-tenancy",
+    "tenant-auth",
+    "auth",
+    "core",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}

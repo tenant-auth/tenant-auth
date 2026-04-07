@@ -1,0 +1,64 @@
+{
+  "name": "@tenant-auth/core",
+  "version": "0.0.1",
+  "description": "The most comprehensive multi-tenancy framework for TypeScript.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenant-auth/tenant-auth.git",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "multi-tenancy",
+    "tenant-auth",
+    "auth",
+    "core",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "dev-source": "./src/index.ts",
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./api": {
+      "dev-source": "./src/api/index.ts",
+      "types": "./dist/api/index.d.mts",
+      "default": "./dist/api/index.mjs"
+    }
+  },
+  "typesVersions": {
+      "*": {
+      ".": [
+        "dist/index.d.mts"
+      ],
+      "api": [
+        "dist/api/index.d.mts"
+      ]
+    }
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+   "devDependencies": {
+    "better-call": "catalog:",
+    "tsdown": "catalog:"
+  }
+}

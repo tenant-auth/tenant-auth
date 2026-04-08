@@ -51,7 +51,24 @@ importers:
         specifier: 'catalog:'
         version: 0.21.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(typescript@5.9.3)
 
-  packages/multi-tenancy: {}
+  packages/tenant-auth:
+    dependencies:
+      '@tenant-auth/core':
+        specifier: workspace:*
+        version: link:../core
+      better-call:
+        specifier: 'catalog:'
+        version: 1.3.5(zod@4.3.6)
+      zod:
+        specifier: ^4.3.6
+        version: 4.3.6
+    devDependencies:
+      tsdown:
+        specifier: 'catalog:'
+        version: 0.21.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(typescript@5.9.3)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
 
 packages:
 

@@ -1,0 +1,1 @@
+import type { AuthContext, BetterAuthOptions } from "@tenant-auth/core";

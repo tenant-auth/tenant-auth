@@ -11,7 +11,13 @@ export default defineConfig({
 	entry: [
 		"./src/index.ts",
 		"./src/api/index.ts",
+		"./src/async_hooks/index.ts",
+		"./src/async_hooks/pure.index.ts",
+		"./src/context/index.ts"
 	],
+	deps: {
+		neverBundle: ["@tenant-auth/core/async_hooks"],
+	},
 	env: {
 		MULTI_TENANCY_VERSION: packageJson.version,
 	},
